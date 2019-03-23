@@ -22,6 +22,16 @@
 
 %define the default submitted text
 \newcommand{\submittedtext}{{Applied Bachelor Program of Informatics Engineering}}
+\renewcommand{\contentsname}{DAFTAR ISI}
+\renewcommand{\listfigurename}{DAFTAR GAMBAR}
+\renewcommand{\listtablename}{DAFTAR TABEL}
+\renewcommand{\bibname}{DAFTAR PUSTAKA}
+\renewcommand{\indexname}{INDEX}
+\renewcommand{\figurename}{Gambar}
+\renewcommand{\tablename}{Tabel}
+\renewcommand{\partname}{Bagian}
+\renewcommand{\chaptername}{BAB}
+\renewcommand{\appendixname}{Appendix}
 
 %
 % DECLARATIONS
