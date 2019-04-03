@@ -22,6 +22,8 @@
 
 %define the default submitted text
 \newcommand{\submittedtext}{{Applied Bachelor Program of Informatics Engineering}}
+\renewcommand\thechapter{\Roman{chapter}}
+\renewcommand\thesection{\arabic{chapter}.\arabic{section}}
 \renewcommand{\contentsname}{DAFTAR ISI}
 \renewcommand{\listfigurename}{DAFTAR GAMBAR}
 \renewcommand{\listtablename}{DAFTAR TABEL}
