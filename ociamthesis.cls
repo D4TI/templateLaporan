@@ -48,6 +48,20 @@
 % The name of your Oxford college (e.g. Christ Church, Pembroke)
 \def\college#1{\gdef\@college{#1}}
 
+\def\@makechapterhead#1{%
+    \vspace*{-27\p@}%FOR LESS VERTICAL SPACE YOU CAN MAKE IT UNTIL -127
+    {\parindent \z@ \raggedright \normalfont
+        \ifnum \c@secnumdepth >\m@ne
+        \centering
+        \huge\bfseries \@chapapp\space \thechapter
+        \par\nobreak
+        \vskip 20\p@
+        \fi
+        \interlinepenalty\@M
+        \centering
+        \Huge \bfseries #1\par\nobreak
+        \vskip 21\p@
+    }}
 
 %
 % Setup choosen crest/logo
