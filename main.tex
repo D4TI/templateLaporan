@@ -34,13 +34,45 @@ The Degree of Applied Bachelor of Informatics Engineering}  %your college
 
 
 \maketitle                  % create a title page from the preamble info
-\include{section/dedication}        % include a dedication.tex file
-\include{section/acknowlegements}   % include an acknowledgements.tex file
-\include{section/abstract}          % include the abstract
 
 \begin{romanpages}          % start roman page numbering
+\addcontentsline{toc}{chapter}{COVER}
+\include{section/dedication}        % include a dedication.tex file
+
+\addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN LAPORAN}
+\include{section/pengesahan}     %include a pengesahan.tex file
+
+\addcontentsline{toc}{chapter}{LEMBAR PERNYATAAN}
+\include{section/pernyataan}    %include a pernyataan.tex file
+
+\addcontentsline{toc}{chapter}{HALAMAN PERNYATAAN}
+\include{section/halaman}      %include a halaman.tex file
+
+\addcontentsline{toc}{chapter}{ABSTRAK}
+\include{section/abstrak}  % include the abstract
+
+\addcontentsline{toc}{chapter}{\textit{ABSTRACT}}
+\include{section/abstract}
+
+% start roman page numbering
+
+\addcontentsline{toc}{chapter}{KATA PENGANTAR}
+\include{section/acknowlegements}   % include an acknowledgements.tex file
+
+\addcontentsline{toc}{chapter}{DAFTAR ISI}
 \tableofcontents            % generate and include a table of contents
-\listoffigures              % generate and include a list of figures
+
+\listoffigures
+\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
+
+\listoftables           % generate and include a list of figures
+\addcontentsline{toc}{chapter}{DAFTAR TABEL}
+
+\addcontentsline{toc}{chapter}{DAFTAR SIMBOL}
+\include{section/simbol}
+
+\addcontentsline{toc}{chapter}{DAFTAR SINGKATAN}
+\include{section/singkatan}
 \end{romanpages}            % end roman page numbering
 
 %now include the files of latex for each of the chapters etc
@@ -50,14 +82,14 @@ The Degree of Applied Bachelor of Informatics Engineering}  %your college
 \include{section/chapter4}
 \include{section/chapter5}
 \include{section/chapter6}
-
+\include{section/chapter7}
 %now enable appendix numbering format and include any appendices
 \appendix
 \include{section/appendix1}
 \include{section/appendix2}
 
 %next line adds the Bibliography to the contents page
-\addcontentsline{toc}{chapter}{Daftar Pustaka}
+\addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
 %uncomment next line to change bibliography name to references
 %\renewcommand{\bibname}{References}
 \bibliography{references}        %use a bibtex bibliography file refs.bib
